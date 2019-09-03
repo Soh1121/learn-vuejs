@@ -13,6 +13,10 @@
 <ul>
     <li v-for="value in user">{{ value }}</li>
 </ul>
+<hr>
+<ul>
+    <li v-for="(value, key) in user">{{ key }} : {{ value }}</li>
+</ul>
 </div>
 
 </body>
