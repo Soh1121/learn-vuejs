@@ -6,7 +6,8 @@ var app = new Vue({
     },
     methods: {
         onclick: function() {
-            alert('onclick')
+            // alert('onclick')
+            this.now = new Date().toLocaleString();
         }
     }
 })
