@@ -16,6 +16,9 @@
     <p v-if="toggle">
         <a v-bind:href="url">Vue.js</a>
     </p>
+    <ul>
+        <li v-for="language in languages">{{ language }}</li>
+    </ul>
 </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>

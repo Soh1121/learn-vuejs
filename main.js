@@ -3,6 +3,11 @@ var app = new Vue({
     data: {
         message: 'Hello World',
         url: 'https://jp.vuejs.org/',
-        toggle: true
+        toggle: true,
+        languages: [
+            'JavaScript',
+            'Ruby',
+            'Python'
+        ]
     }
 })
