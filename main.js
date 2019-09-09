@@ -11,7 +11,7 @@ var app = new Vue({
         ]
     },
     methods: {
-        onclick: function () {
+        click: function () {
             this.message = 'Clicked!';
         }
     }
