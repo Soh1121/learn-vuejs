@@ -9,5 +9,10 @@ var app = new Vue({
             'Ruby',
             'Python'
         ]
+    },
+    methods: {
+        onclick: function () {
+            this.message = 'Clicked!';
+        }
     }
 })
