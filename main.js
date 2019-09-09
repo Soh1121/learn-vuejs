@@ -1,8 +1,8 @@
-Vue.component('hello-component', {
-    template: '<p>Hello</p>'
-})
-
 var app = new Vue({
-    // options
-    el: '#app'
+    el: '#app',
+    data: {
+        message: 'Hello World',
+        url: 'https://jp.vuejs.org/',
+        toggle: true
+    }
 })

@@ -10,11 +10,13 @@
 
 <body>
 <div id="app">
-    <hello-component></hello-component>
-    <hello-component></hello-component>
-    <hello-component></hello-component>
+    <p>
+        {{ message }}
+    </p>
+    <p v-if="toggle">
+        <a v-bind:href="url">Vue.js</a>
+    </p>
 </div>
-
 </body>
 <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
 <script src="./main.js"></script>
