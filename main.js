@@ -3,6 +3,6 @@ var app = new Vue({
     data: {
         message: 'Hello World',
         url: 'https://jp.vuejs.org/',
-        toggle: false
+        toggle: true
     }
 })
