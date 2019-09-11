@@ -1,18 +1,23 @@
-var app = new Vue({
+const app = new Vue({
     el: '#app',
     data: {
-        message: 'Hello World',
-        url: 'https://jp.vuejs.org/',
-        toggle: true,
-        languages: [
-            'JavaScript',
-            'Ruby',
-            'Python'
-        ]
+        newItem: '',
+        todos: []
     },
     methods: {
-        click: function () {
-            this.message = 'Clicked!';
+        addItem: function (event) {
+            // alert()
+            if (this.newItem === '') return
+            const todo = {
+                item: this.newItem,
+                isDone: false
+            }
+            this.todos.push(todo)
+            this.newItem = ''
+        },
+        deleteItem: function (index) {
+            //alert(index)
+            this.todos.splice(index, 1)
         }
     }
 })
