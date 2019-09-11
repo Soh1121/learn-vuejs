@@ -14,6 +14,9 @@ const app = new Vue({
             }
             this.todos.push(todo)
             this.newItem = ''
+        },
+        deleteItem: function (index) {
+            alert(index)
         }
     }
 })
