@@ -8,6 +8,8 @@ const app = new Vue({
             // console.log(response.data.bpi)
             // console.log(response.data.bpi.USD.rate_float)
             this.bpi = response.data.bpi
-        }.bind(this))
+        }.bind(this)).catch(function(error) {
+            console.log(error)
+        })
     }
 })
