@@ -3,6 +3,6 @@ const app = new Vue({
     data: {
         message: 'Hello Vue.js!',
         number: 100,
-        ok: true
+        ok: false
     }
 })
