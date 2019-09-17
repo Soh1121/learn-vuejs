@@ -9,8 +9,17 @@
 </head>
 <body>
 <div id="app">
-    {{ message }}
-    <p v-text="message">
+    <p>
+        {{ message }}
+    </p>
+    <p>
+        {{ number + 1 }}
+    </p>
+    <p>
+        {{ message.split('').reverse().join('') }}
+    </p>
+    <p>
+        {{ ok ? 'YES' : 'NO' }}
     </p>
 </div>
 </body>
