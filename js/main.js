@@ -9,6 +9,6 @@ Vue.filter('numberFormat', function (value) {
 const app = new Vue({
     el: '#app',
     data: {
-        jpyPrice: 29800
+        jpyPrice: 298000
     }
 })
