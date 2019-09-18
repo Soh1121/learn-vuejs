@@ -5,7 +5,7 @@ const app = new Vue({
     },
     computed: {
         reversedMessage: function() {
-            return message.split('').reverse().join('')
+            return this.message.split('').reverse().join('')
         }
     }
 })
