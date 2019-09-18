@@ -1,6 +1,15 @@
 const app = new Vue({
     el: '#app',
-    data: {
-        url: 'https://www.google.co.jp/'
+    computed: {
+        computedNumber: function () {
+            console.log('computed!')
+            return Math.random()
+        }
+    },
+    methods: {
+        methodsNumber: function () {
+            console.log('methods!')
+            return Math.random()
+        }
     }
 })
