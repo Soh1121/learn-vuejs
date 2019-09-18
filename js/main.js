@@ -1,11 +1,15 @@
+Vue.filter('numberFormat', function(value) {
+    return value.toLocaleString()
+})
+
 const app = new Vue({
     el: '#app',
     data: {
-        price: 2980000000
+        price: 29800
     },
-    filters: {
+/*     filters: {
         numberFormat: function (value) {
             return value.toLocaleString()
         }
-    }
+    } */
 })
