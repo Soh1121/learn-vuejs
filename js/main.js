@@ -6,10 +6,10 @@ const app = new Vue({
     computed: {
         taxIncludedPrice: {
             get: function () {
-                return this.basePrice * 1.08
+                return parseInt(this.basePrice * 1.08)
             },
             set: function(taxIncludedPrice) {
-                this.basePrice = taxIncludedPrice / 1.08
+                this.basePrice = Math.ceil(taxIncludedPrice / 1.08)
             }
         }
     }
