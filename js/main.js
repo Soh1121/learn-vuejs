@@ -12,7 +12,7 @@ const app = new Vue({
             handler: function (newValue, oldValue) {
                 console.log('Update!')
             },
-            deep: true
+            deep: false
         }
     }
 })
