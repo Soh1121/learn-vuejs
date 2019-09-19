@@ -1,15 +1,22 @@
 const app = new Vue({
     el: '#app',
-    computed: {
-        computedNumber: function () {
-            console.log('computed!')
-            return Math.random()
-        }
+    data: {
+        colors: [
+            { name: 'Red' },
+            { name: 'Green' },
+            { name: 'Blue' }
+        ]
     },
-    methods: {
-        methodsNumber: function () {
-            console.log('methods!')
-            return Math.random()
+    watch: {
+        colors: {
+            handler: function (newValue, oldValue) {
+                console.log('Update!')
+                console.log(`new: ${newValue}, oldValue: ${oldValue}`,
+                JSON.stringify(newValue, null, '\t'),
+                JSON.stringify(oldValue, null, '\t'))
+            },
+            deep: true,
+            immediate: false
         }
     }
 })
