@@ -1,4 +1,4 @@
-const app = new Vue({
+/* const app = new Vue({
     el: '#app',
     data: {
         firstName: '',
@@ -11,6 +11,20 @@ const app = new Vue({
         },
         lastName: function (value) {
             this.fullName = `${this.firstName} ${value}`
+        }
+    }
+})
+ */
+
+const app = new Vue({
+    el: '#app',
+    data: {
+        firstName: '',
+        lastName: '',
+    },
+    computed: {
+        fullName: function () {
+            return `${this.firstName} ${this.lastName}`
         }
     }
 })
