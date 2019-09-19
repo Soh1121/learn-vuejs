@@ -16,7 +16,7 @@ const app = new Vue({
                 JSON.stringify(oldValue, null, '\t'))
             },
             deep: true,
-            immediate: true
+            immediate: false
         }
     }
 })
