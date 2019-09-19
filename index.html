@@ -10,12 +10,14 @@
 <body>
 <div id="app">
     <p>
-        {{ message }}
+        <input type="text" v-model:value="km">km
     </p>
     <p>
-        <input type="text" v-model:value="message">
+        <input type="text" v-model:value="m">m
     </p>
-    <pre>{{ $data }}</pre>
+    <p>
+        <input type="text" v-model:value="mm">mm
+    </p>
 </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
