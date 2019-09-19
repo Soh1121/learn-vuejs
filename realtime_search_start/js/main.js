@@ -8,8 +8,9 @@ var app = new Vue({
     watch: {
 
     },
-    created: {
-
+    created: function () {
+        this.keyword = 'JavaScript'
+        this.getAnswer()
     },
     methods: {
         getAnswer: function () {
