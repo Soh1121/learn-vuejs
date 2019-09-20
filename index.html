@@ -9,11 +9,7 @@
 </head>
 <body>
 <div id="app">
-    <ul>
-        <li v-for="color in colors">
-            {{ color.name }}
-        </li>
-    </ul>
+    <p>Hello <span v-bind:class="{large:isLarge}">Vue.js!</span></p>
 </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
