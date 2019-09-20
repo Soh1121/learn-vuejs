@@ -9,16 +9,16 @@
 </head>
 <body>
 <div id="app">
-    <p>
+    <p v-if="color === 'red'">
         Stop
     </p>
-    <p>
+    <p v-else-if="color === 'yellow'">
         Caution
     </p>
-    <p>
+    <p v-else-if="color === 'blue'">
         Go
     </p>
-    <p>
+    <p v-else>
         Not red/yellow/blue
     </p>
 </body>
