@@ -6,8 +6,8 @@ const app = new Vue({
             'bg-gray': true
         },
         dangerClass: {
-            'text-denger': true
+            'text-danger': true
         },
-        isLarge: true
+        isLarge: false
     }
 })
