@@ -2,6 +2,6 @@ const app = new Vue({
     el: '#app',
     data: {
         isLarge: true,
-        hasError: false
+        hasError: true
     }
 })
