@@ -8,6 +8,6 @@ const app = new Vue({
         dangerClass: {
             'text-danger': true
         },
-        isLarge: false
+        isLarge: true
     }
 })
