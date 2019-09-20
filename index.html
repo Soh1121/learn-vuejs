@@ -9,17 +9,8 @@
 </head>
 <body>
 <div id="app">
-    <p v-if="color === 'red'">
-        Stop
-    </p>
-    <p v-else-if="color === 'yellow'">
-        Caution
-    </p>
-    <p v-else-if="color === 'blue'">
-        Go
-    </p>
-    <p v-else>
-        Not red/yellow/blue
+    <p v-show="toggle">
+        Hello Vue.js!
     </p>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
