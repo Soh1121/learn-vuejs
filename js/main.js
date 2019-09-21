@@ -1,6 +1,8 @@
 const app = new Vue({
     el: '#app',
-    data: {
-        toggle: false
+    methods: {
+        clickHandler: function() {
+            alert('Clicked!')
+        }
     }
 })
