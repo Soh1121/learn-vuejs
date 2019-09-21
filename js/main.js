@@ -4,8 +4,9 @@ const app = new Vue({
         counter: 0
     },
     methods: {
-        clickHandler: function () {
+        clickHandler: function (event) {
             this.counter++
+            console.log(event)
         }
     }
 })
