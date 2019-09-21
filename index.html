@@ -9,13 +9,12 @@
 </head>
 <body>
 <div id="app">
-    <!-- <input type="text" v-model="message" v-on:keyup.esc="clear"> -->
-    <!-- <input type="text" v-model="message" v-on:keyup.esc.space.up="clear"> -->
-    <input type="text" v-model="message" v-on:keyup.ctrl.67="clear">
-    <div v-on:click.shift="clickHandler">
-        Click me!
-    </div>
-    <p>{{ message }}</p>
+    <button v-on:click="clickHandler">
+        Click1
+    </button>
+    <button @click="clickHandler">
+        Click2
+    </button>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
 <script src="js/main.js"></script>
