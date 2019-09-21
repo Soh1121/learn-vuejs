@@ -1,6 +1,6 @@
 const app = new Vue({
     el: '#app',
     data: {
-        toggle: false
+        counter: 0
     }
 })
