@@ -12,7 +12,7 @@
     <!-- <input type="text" v-model="message" v-on:keyup.esc="clear"> -->
     <!-- <input type="text" v-model="message" v-on:keyup.esc.space.up="clear"> -->
     <input type="text" v-model="message" v-on:keyup.ctrl.67="clear">
-    <div>
+    <div v-on:click.shift="clickHandler">
         Click me!
     </div>
     <p>{{ message }}</p>
