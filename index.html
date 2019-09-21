@@ -10,7 +10,8 @@
 <body>
 <div id="app">
     <!-- <input type="text" v-model="message" v-on:keyup.esc="clear"> -->
-    <input type="text" v-model="message" v-on:keyup.esc.space.up="clear">
+    <!-- <input type="text" v-model="message" v-on:keyup.esc.space.up="clear"> -->
+    <input type="text" v-model="message" v-on:keyup.ctrl.67="clear">
     <p>{{ message }}</p>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
