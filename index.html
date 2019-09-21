@@ -12,7 +12,7 @@
     <p>
         {{ message }}
     </p>
-    <button v-on:click="clickHandler('Vue.js')">
+    <button v-on:click="clickHandler($event, 'Vue.js')">
         Click
     </button>
 </body>
