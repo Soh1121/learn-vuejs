@@ -7,6 +7,9 @@ const app = new Vue({
         clickHandler: function (event) {
             this.counter++
             console.log(event)
+            console.log(event.target.tagName)
+            console.log(event.target.innerHTML)
+            console.log(event.target.type)
         }
     }
 })
