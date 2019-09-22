@@ -7,5 +7,5 @@ Vue.component('button-counter', {
     template: '<button v-on:click="count++">{{ count }}</button>'
 })
 const app = new Vue({
-    el: '#app',
+    el: '#app'
 })
