@@ -9,9 +9,15 @@
 </head>
 <body>
 <div id="app">
-    <button-counter></button-counter>
-    <button-counter></button-counter>
-    <button-counter></button-counter>
+    <button v-on:click="show=!show">
+        Change
+    </button>
+    <transition>
+        <!-- <p v-show="show"> -->
+        <p v-if="show">
+            Hello Transition
+        </p>
+    </transition>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
 <script src="js/main.js"></script>
