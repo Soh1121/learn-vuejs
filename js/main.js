@@ -1,6 +1,6 @@
+Vue.component('hello-component', {
+    template: '<p>Hello</p>'
+})
 const app = new Vue({
-    el: '#app',
-    data: {
-        age: 0
-    }
+    el: '#app'
 })
