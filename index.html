@@ -12,9 +12,11 @@
     <button v-on:click="show=!show">
         Change
     </button>
-    <p v-show="show">
-        Hello Transition
-    </p>
+    <transition>
+        <p v-show="show">
+            Hello Transition
+        </p>
+    </transition>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
 <script src="js/main.js"></script>
