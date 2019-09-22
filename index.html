@@ -9,14 +9,9 @@
 </head>
 <body>
 <div id="app">
-    <select v-model="selected" multiple>
-        <option disabled value="">Please select one</option>
-        <option>Red</option>
-        <option>Green</option>
-        <option>Blue</option>
-    </select>
+    <input type="text" v-model.lazy="message">
     <p>
-        {{ selected }}
+        {{ message }}
     </p>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
