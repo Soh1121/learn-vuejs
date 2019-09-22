@@ -20,6 +20,23 @@
     const User = {
       template: '<div>User</div>'
     }
+    const router = new VueRouter({
+      routes: [
+        {
+          path: '/top',
+          component: Top
+        },
+        {
+          path: '/users',
+          component: User
+        }
+      ]
+    })
+
+    const app = new Vue({
+      // router: router
+      router
+    }).$mount('#app')
   </script>
 </body>
 </html>
