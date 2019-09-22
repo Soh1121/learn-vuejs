@@ -9,10 +9,10 @@
 </head>
 <body>
 <div id="app">
-    <button>
+    <button v-on:click="show=!show">
         Change
     </button>
-    <p>
+    <p v-show="show">
         Hello Transition
     </p>
 </body>
