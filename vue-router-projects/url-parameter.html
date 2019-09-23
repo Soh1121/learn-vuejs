@@ -42,7 +42,21 @@
     }
 
     const router = new VueRouter({
-      routes: []
+      routes: [
+        {
+          path: '/users/:userId', component: User,
+          children: [
+            {
+              path: 'profile',
+              component: Profile
+            },
+            {
+              path: 'posts',
+              component: Posts
+            }
+          ]
+        }
+      ]
     })
 
     const app = new Vue({
@@ -57,7 +71,6 @@
     }
 
     .user {
-
     }
   </style>
 </body>
